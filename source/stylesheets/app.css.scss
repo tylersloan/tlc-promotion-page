@@ -1,0 +1,193 @@
+body {
+  background-color: #F1F2F2;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.top, .bottom {
+  width: 100%;
+  height: 8px;
+  background-color: white;
+  position: fixed;
+  z-index: 9999;
+}
+
+.left, .right {
+  width: 8px;
+  height: 100%;
+  background-color: white;
+  position: fixed;
+  z-index: 9999;
+}
+
+.top { top: 0; left: 0;}
+.right { top: 0; right: 0;}
+.bottom { bottom: 0; left: 0;}
+.left { top: 0; left: 0;}
+
+.wrapper {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  max-width: 990px;
+  width: 95%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+header {
+  background: url(tlc-header.png) center no-repeat;
+  background-size: 100% auto;
+  max-width: 1200px;
+  height: 440px;
+  padding: 33% 0 3% 0;
+}
+
+.cbs-hero {
+  background: url(cbs-hero.jpg) center no-repeat;
+  background-size: 100% auto;
+  max-width: 100%;
+  height: 645px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 100px;
+}
+
+.bio {
+  width: 100%;
+}
+
+.bio img {
+  float: left;
+  margin-right: 25px;
+  max-width: 411px;
+  border: 4px solid white;
+}
+
+.bio p {
+  font-family: 'Libre Baskerville', serif;
+  color: rgb(40,40,40);
+  font-size: 12px;
+  text-align: justify;
+  line-height: 18px;
+  max-width: 630px;
+  margin: 0;
+  display: inline-block;
+}
+
+.sidebar {
+  margin-left: 30px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin-top: 79px;
+}
+
+h1 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 700;
+  font-size: 82.4px;
+  color: rgb(40,40,40);
+  margin-bottom: -36px;
+  text-transform: uppercase;
+  text-shadow: -2px 2px 0 #33466e, -4px 4px 0 rgb(40,40,40);
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 29.4px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  text-shadow: -2px 2px 0 #33466e, -4px 4px 0 rgb(40,40,40);
+}
+
+h3 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: 1px;
+  line-height: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h4 {
+
+}
+
+h5 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  text-align: center;
+}
+
+hr {
+  width: 100%;
+  height: 3px;
+  float: left;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-left: none;
+  border-right: none;
+  background-color: none;
+}
+
+.booking-button {
+  width: 75%;
+  margin: 75px auto;
+  text-align: center;
+  padding: 30px 0;
+  background: #edf0f2;
+  border: 4px solid white;
+  box-shadow: 0px 0px 8px rgba(0,0,0,.5);
+  border-radius: 1px;
+  -webkit-transition: .1s all ease;
+}
+
+.booking-button:hover {
+  background-color: white;
+}
+
+a { 
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  font-weight: 700;
+  color: #2a3d5d;
+  text-shadow: 0 1px 1px rgba(0,0,0,.3);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+.sidebar img {
+  width: 100%;
+  max-width: 327px;
+  border-radius: 1px;
+  border: 4px solid white;
+  margin-bottom: 25px;
+}
+
+strong {
+  font-weight: 700;
+  color: rgb(40,40,40);
+  text-shadow: none;
+}
+
+ul {
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 15px;
+  color: rgb(230, 230, 230);
+}
