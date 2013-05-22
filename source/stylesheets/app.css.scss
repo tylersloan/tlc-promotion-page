@@ -24,85 +24,32 @@ body {
 .bottom { bottom: 0; left: 0;}
 .left { top: 0; left: 0;}
 
-.wrapper {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
+/* ------------------------------------------------------ */
+/* ----------------- MAIN TYPOGRAPHY -------------------- */
+/* ------------------------------------------------------ */
 
-.main {
-  max-width: 990px;
-  width: 95%;
-  margin: 0 auto;
-  padding: 0;
-}
-
-header {
-  background: url(tlc-header.png) center no-repeat;
-  background-size: 100% auto;
-  max-width: 1200px;
-  height: 440px;
-  padding: 33% 0 3% 0;
-}
-
-.cbs-hero {
-  background: url(cbs-hero.jpg) center no-repeat;
-  background-size: 100% auto;
-  max-width: 100%;
-  height: 645px;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 100px;
-}
-
-.bio {
-  width: 100%;
-}
-
-.bio img {
-  float: left;
-  margin-right: 25px;
-  max-width: 411px;
-  border: 4px solid white;
-}
-
-.bio p {
-  font-family: 'Libre Baskerville', serif;
-  color: rgb(40,40,40);
-  font-size: 12px;
-  text-align: justify;
-  line-height: 18px;
-  max-width: 630px;
-  margin: 0;
-  display: inline-block;
-}
-
-.sidebar {
-  margin-left: 30px;
-  display: inline-block;
-  vertical-align: top;
-  text-align: left;
-  margin-top: 79px;
+h1, h2 {
+  color: #3A3A3C;
 }
 
 h1 {
   font-family: 'PT Sans Narrow', sans-serif;
   font-weight: 700;
   font-size: 82.4px;
-  color: rgb(40,40,40);
   margin-bottom: -36px;
   text-transform: uppercase;
-  text-shadow: -2px 2px 0 #33466e, -4px 4px 0 rgb(40,40,40);
+  text-shadow: -2px 2px 0 #F1F2F2, -4px 4px 0 #3A3A3C;
 }
 
 h2 {
   font-weight: 400;
-  font-size: 29.4px;
-  line-height: 1.2;
+  font-size: 44px;
+  line-height: 1;
   letter-spacing: 1px;
+  text-align: center;
   margin-bottom: 16px;
   text-transform: uppercase;
-  text-shadow: -2px 2px 0 #33466e, -4px 4px 0 rgb(40,40,40);
+  text-shadow: -1px 1px 0 #F1F2F2, -3px 3px 0 #E1E1E2;
 }
 
 h3 {
@@ -126,16 +73,134 @@ h5 {
   text-align: center;
 }
 
-hr {
-  width: 100%;
-  height: 3px;
-  float: left;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
-  border-left: none;
-  border-right: none;
-  background-color: none;
+strong {
+  font-weight: 700;
+  color: rgb(40,40,40);
+  text-shadow: none;
 }
+
+p {
+  font-family: 'Libre Baskerville', serif;
+  color: rgb(40,40,40);
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0;
+  display: inline-block;
+}
+
+/* ------------------------------------------------------ */
+/* ------------------ END TYPOGRAPHY -------------------- */
+/* ------------------------------------------------------ */
+
+/* ------------------------------------------------------ */
+/* ------------------ MAIN CONTAINERS ------------------- */
+/* ------------------------------------------------------ */
+
+.wrapper {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  max-width: 990px;
+  width: 95%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  padding: 20% 0 15% 0;
+  -webkit-animation: header 5s ease;
+
+  img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+  }
+}
+
+@-webkit-keyframes header {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.cbs-hero {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 100px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+a {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  color: #3A3A3C;
+  text-decoration: none;
+}
+
+
+.left-quote {
+  width: 100%;
+  text-align: left;
+  display: inline-block;
+
+  img {
+    display: inline-block;
+  }
+
+  p {
+    display: inline-block;
+    padding-right: 60%;
+  }
+}
+
+.right-quote {
+  width: 57%;
+  text-align: right;
+  padding-left: 43%;
+  display: inline-block;
+
+  img {
+    float: right;
+  }
+}
+
+/* ------------------------------------------------------ */
+/* -------------- END MAIN CONTAINERS ------------------- */
+/* ------------------------------------------------------ */
+
+/* ------------------------------------------------------ */
+/* ------------------- BIO SECTION ---------------------- */
+/* ------------------------------------------------------ */
+
+.bio {
+  width: 100%;
+}
+
+.bio img {
+  float: left;
+  margin-right: 25px;
+  max-width: 411px;
+  border: 4px solid white;
+}
+
+.bio p {
+  max-width: 630px;
+}
+
+/* ------------------------------------------------------ */
+/* --------------- END BIO SECTION ---------------------- */
+/* ------------------------------------------------------ */
+
+/* ------------------------------------------------------ */
+/* ------------------ BOOKING BUTTON -------------------- */
+/* ------------------------------------------------------ */
 
 .booking-button {
   width: 75%;
@@ -151,32 +216,32 @@ hr {
 
 .booking-button:hover {
   background-color: white;
+
+  a { 
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    font-weight: 700;
+    color: #2a3d5d;
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    text-decoration: none;
+    text-transform: uppercase;
+  }
 }
 
-a { 
-  font-family: 'PT Sans', sans-serif;
-  font-weight: 700;
-  font-size: 42px;
-  font-weight: 700;
-  color: #2a3d5d;
-  text-shadow: 0 1px 1px rgba(0,0,0,.3);
-  text-decoration: none;
-  text-transform: uppercase;
-}
+/* ------------------------------------------------------ */
+/* -------------- END BOOKING BUTTON -------------------- */
+/* ------------------------------------------------------ */
 
-
-.sidebar img {
+hr {
   width: 100%;
-  max-width: 327px;
-  border-radius: 1px;
-  border: 4px solid white;
-  margin-bottom: 25px;
-}
-
-strong {
-  font-weight: 700;
-  color: rgb(40,40,40);
-  text-shadow: none;
+  height: 3px;
+  float: left;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-left: none;
+  border-right: none;
+  background-color: none;
 }
 
 ul {
