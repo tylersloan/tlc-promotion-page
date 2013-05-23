@@ -223,6 +223,7 @@ a {
 
   img {
     margin-left: 25px;
+    float: right;
 
     &.lee {
       margin-bottom: -53px;
@@ -231,6 +232,10 @@ a {
     &.relevant {
       margin-bottom: -49px;
     }
+  }
+
+  p.lee, p.relevant {
+    margin-top: 48px;
   }
 }
 
