@@ -608,6 +608,7 @@ hr {
       img {
         margin: 0 auto;
         margin-bottom: 5%;
+        float: none;
 
         &.lee {
           margin-bottom: 0;
@@ -616,6 +617,10 @@ hr {
         &.relevant {
           margin-bottom: 0;
         }
+      }
+
+      p.lee, p.relevant {
+        margin-top: 0;
       }
     }
 
