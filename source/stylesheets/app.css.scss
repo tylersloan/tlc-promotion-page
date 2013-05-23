@@ -28,28 +28,34 @@ body {
 /* ----------------- MAIN TYPOGRAPHY -------------------- */
 /* ------------------------------------------------------ */
 
-h1, h2 {
+h1, h2, h3, h4, h5 {
   color: #3A3A3C;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1;
 }
 
 h1 {
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-weight: 700;
-  font-size: 82.4px;
-  margin-bottom: -36px;
-  text-transform: uppercase;
+  font-size: 118px;
+  letter-spacing: 10px;
   text-shadow: -2px 2px 0 #F1F2F2, -4px 4px 0 #3A3A3C;
 }
 
 h2 {
-  font-weight: 400;
   font-size: 44px;
   line-height: 1;
   letter-spacing: 1px;
-  text-align: center;
-  margin-bottom: 16px;
-  text-transform: uppercase;
+  margin: 79px 0 46px 0;
   text-shadow: -1px 1px 0 #F1F2F2, -3px 3px 0 #E1E1E2;
+
+}
+
+.white {
+  color: #F3F3F4;
+  text-shadow: -2px 2px 0 rgb(40,40,40), -3px 3px 0 rgba(255,255,255,.2);
+  margin: -18px 0 63px 0;
 }
 
 h3 {
@@ -63,14 +69,24 @@ h3 {
 }
 
 h4 {
-
+  font: {
+    size: 44px;
+    weight: 400;
+  }
+  text-transform: lowercase;
+  letter-spacing: 5px;
 }
 
 h5 {
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-weight: 300;
-  font-size: 25px;
-  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  text-align: left;
+  margin: 0 0 10px 0;
+
+  span {
+    font-weight: 400;
+    color: rgb(102,102,102);
+  }
 }
 
 strong {
@@ -80,9 +96,12 @@ strong {
 }
 
 p {
-  font-family: 'Libre Baskerville', serif;
+  font: {
+      family: 'Libre Baskerville', serif;
+      weight: 400;
+      size: 12px;
+  }
   color: rgb(40,40,40);
-  font-size: 12px;
   line-height: 18px;
   margin: 0;
   display: inline-block;
@@ -112,7 +131,8 @@ p {
 header {
   width: 100%;
   padding: 20% 0 15% 0;
-  -webkit-animation: header 5s ease;
+  -webkit-animation-name: header;
+  -webkit-animation-duration: .5s;
 
   img {
     width: 100%;
@@ -122,8 +142,22 @@ header {
 }
 
 @-webkit-keyframes header {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+  from {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+   -webkit-transform: scale(0);
+   opacity: .25;
+  }
+  82.5% {
+    -webkit-transform: scale(1.13);
+    -webkit-animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
 }
 
 .cbs-hero {
@@ -140,35 +174,77 @@ header {
 a {
   font-family: 'PT Sans', sans-serif;
   font-weight: 700;
-  color: #3A3A3C;
+  font-size: 14px;
+  color: rgb(175,175,175);
   text-decoration: none;
+
+  &:hover {
+    color: rgb(40,40,40);
+  }
+}
+
+.left-quote, .right-quote {
+   width: 100%;
+   display: inline-block;
+   margin-bottom: 45px;
+
+   img {
+    max-width: 156px;
+    width: 20%;
+    height: auto;
+    display: inline-block;
+   }
+
+   p {
+    width: 42%;
+    font-size: 16px;
+    line-height: 1.3;
+   }
 }
 
 
 .left-quote {
-  width: 100%;
   text-align: left;
-  display: inline-block;
 
   img {
-    display: inline-block;
-  }
+    margin-right: 25px;
 
-  p {
-    display: inline-block;
-    padding-right: 60%;
+    &.lauren {
+      margin-bottom: -35px;
+    }
+
+    &.kris {
+      margin-bottom: -39px;
+    }
   }
 }
 
 .right-quote {
-  width: 57%;
   text-align: right;
-  padding-left: 43%;
-  display: inline-block;
 
   img {
-    float: right;
+    margin-left: 25px;
+
+    &.lee {
+      margin-bottom: -53px;
+    }
+
+    &.relevant {
+      margin-bottom: -49px;
+    }
   }
+}
+
+.no-bleed {
+  width: 100%;
+  margin-top: 50px;
+  padding: 63px 0 49px 0;
+  background-color: rgb(40, 40, 40);
+}
+
+.booking-section {
+  width: 100%;
+
 }
 
 /* ------------------------------------------------------ */
@@ -192,6 +268,7 @@ a {
 
 .bio p {
   max-width: 630px;
+  width: 63%;
 }
 
 /* ------------------------------------------------------ */
@@ -230,29 +307,162 @@ a {
 }
 
 /* ------------------------------------------------------ */
-/* -------------- END BOOKING BUTTON -------------------- */
+/* ----------------- END BOOKING BUTTON ----------------- */
 /* ------------------------------------------------------ */
+
+/* ------------------------------------------------------ */
+/* ------------------ BOOKING SECTION ------------------- */
+/* ------------------------------------------------------ */
+
+.or {
+  width: 100%;
+  padding: 10px 0;
+  border-top: 1px dotted rgba(255,255,255,.2);
+  border-bottom: 1px dotted rgba(255,255,255,.2);
+  text-align: center;
+  margin: -41px 0 44px 0;
+  line-height: 1;
+  color: rgba(255,255,255,.2);
+  font: {
+      family: serif;
+      weight: 400;
+      style: italic;
+      size: 28px;
+  }
+}
+
+.email {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+
+  h4 {
+    margin: -9px 0px 26px 0px;
+  }
+}
+
+.email:hover {
+
+  opacity: .95;
+
+  h4 {
+    text-shadow: none;
+  }
+}
+
+.ss-send, .ss-mail, .ss-phone {
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.ss-phone {
+  margin: -55px 0 61px 0;
+}
+
+/* ------------------------------------------------------ */
+/* --------------- END BOOKING SECTION ------------------ */
+/* ------------------------------------------------------ */
+
+/* ------------------------------------------------------ */
+/* ---------- DISCOGRAPHY & BOOKS SECTION --------------- */
+/* ------------------------------------------------------ */
+
+// .discography {
+//   width: 100%;
+//   height: 600px;
+// }
+
+ul {
+  list-style: none;
+  width: 100%; 
+  padding: 0;
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+  margin: 20px 5% 20px 0;
+  text-align: left;
+}
+
+.year {
+  font: {
+    family: 'PT Sans', sans-serif;
+    weight: 400;
+    style: italic;
+    size: 10px;
+  }
+  color: #CCC;
+  display: inline;
+}
+  
+li {
+  list-style: none;
+  margin-bottom: 70px;
+  color: rgb(230, 230, 230);
+  display: block;
+
+  &.oj-book {
+    margin-bottom: 116px;
+  }
+
+  img {
+    float: left;
+    width: 130px;
+    margin: 0 2% 0 0;
+    padding: 0;
+  }
+
+  p {
+    width: 65%;
+  }
+}
+
+/* ------------------------------------------------------ */
+/* ---------- END DISCOGRAPHY & BOOKS SECTION ----------- */
+/* ------------------------------------------------------ */
+
+/* ------------------------------------------------------ */
+/* -------------------- AVAILABLE AT -------------------- */
+/* ------------------------------------------------------ */
+
+.stores {
+  width: 100%;
+
+  img {
+    width: 20%;
+    max-width: 195px;
+    height: auto;
+    margin: 0px 2px 20px 0;
+    display: inline-block;
+    text-align: center;
+    border-right: 1px solid white;
+    
+    &.omega {
+      border-right: none;
+      margin-right: 0;
+    }
+  }
+
+}
+
+/* ------------------------------------------------------ */
+/* ------------------ END AVAILABLE AT ------------------ */
+/* ------------------------------------------------------ */
+
 
 hr {
   width: 100%;
+  margin: 50px auto;
   height: 3px;
-  float: left;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   border-left: none;
   border-right: none;
   background-color: none;
-}
 
-ul {
-  list-style: none;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style: none;
-  margin-bottom: 15px;
-  color: rgb(230, 230, 230);
+  &.behind-text {
+    margin: -20px 0 0 0;
+  }
 }
