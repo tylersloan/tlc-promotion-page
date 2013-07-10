@@ -251,6 +251,7 @@ a, .byline {
 
 .no-bleed {
   width: 100%;
+  margin: 0;
   margin-top: 50px;
   padding: 63px 0 49px 0;
   background-color: rgb(40, 40, 40);
@@ -565,11 +566,11 @@ hr {
         padding-bottom: 12%;
       }
 
-      &.hthcd {
+      &.bts {
         border-bottom: none;
       }
     }
-    
+
   }
  
   /* Tablet Portrait size to standard 960 (devices and browsers) */
@@ -581,6 +582,12 @@ hr {
  
   /* All Mobile Sizes (devices and browser) */
   @media only screen and (max-width: 767px) {
+
+    .top, .right, .bottom, .left { display: none;}
+
+    .main {
+      width: 100%;
+    }
 
     h1 {
       font-size: 40px;
@@ -607,11 +614,11 @@ hr {
     }
 
     .bio p {
-      width: 75%;
+      width: 90%;
       font-size: 14px;
       line-height: 1.4;
       text-align: justify;
-      margin: 25px 15%;
+      margin: 25px 5%;
       padding: 0;
     }
 
@@ -679,11 +686,33 @@ hr {
     /* ------------------------------------------------------ */
     /* --------------- END BIO SECTION ---------------------- */
     /* ------------------------------------------------------ */
+
+    .short-text {
+      width: 90%;
+      margin: 0 5%;
+    }
     
   }
  
   /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-  @media only screen and (min-width: 480px) and (max-width: 767px) {}
+  @media only screen and (min-width: 480px) and (max-width: 1136px) {
+
+    ul {
+
+      li {
+        &.speaking-topics {
+        border-bottom: none;
+        padding-top: 1%;
+      }
+      }
+      &.speaking-topics {
+        display: inline-block;
+        width: 90%;
+        margin: 0 5%;
+        padding: 0;
+      }
+    }
+  }
  
   /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
   @media only screen and (max-width: 479px) {
@@ -697,7 +726,7 @@ hr {
     }
 
     h2 {
-      font-size: 26px;
+      font-size: 30px;
       margin: 5% 0 8% 0;
       text-shadow: -1px 1px 0 #F1F2F2, -2px 2px 0 rgb(179, 179, 179);
     }
@@ -745,18 +774,29 @@ hr {
       }
     }
 
-    .bio p {
-      text-align: left;
-    }
 
     ul {
       text-align: center;
+
+      &.speaking-topics {
+        width: 90%;
+        margin: 0 5%;
+        margin-top: 4%;
+        text-align: left;
+        padding: 0;
+      }
 
       li {
         padding-bottom: 3%;
 
         &.cds {
           height: auto;
+        }
+
+        &.speaking-topics {
+          border-bottom: none;
+          padding: 0 0 0px 0;
+          font-size: 16px
         }
         
         img {

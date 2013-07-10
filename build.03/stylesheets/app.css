@@ -1,0 +1,709 @@
+/* line 1, app.css.scss */
+* {
+  -webkit-font-smoothing: antialiased; }
+
+/* line 5, app.css.scss */
+body {
+  background-color: #F1F2F2;
+  font-family: 'PT Sans', sans-serif; }
+
+/* line 10, app.css.scss */
+.top, .bottom {
+  width: 100%;
+  height: 8px;
+  background-color: white;
+  position: fixed;
+  z-index: 9999; }
+
+/* line 18, app.css.scss */
+.left, .right {
+  width: 8px;
+  height: 100%;
+  background-color: white;
+  position: fixed;
+  z-index: 9999; }
+
+/* line 26, app.css.scss */
+.top {
+  top: 0;
+  left: 0; }
+
+/* line 27, app.css.scss */
+.right {
+  top: 0;
+  right: 0; }
+
+/* line 28, app.css.scss */
+.bottom {
+  bottom: 0;
+  left: 0; }
+
+/* line 29, app.css.scss */
+.left {
+  top: 0;
+  left: 0; }
+
+/* ------------------------------------------------------ */
+/* ----------------- MAIN TYPOGRAPHY -------------------- */
+/* ------------------------------------------------------ */
+/* line 35, app.css.scss */
+h1, h2, h3, h4, h5 {
+  color: #3A3A3C;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1; }
+
+/* line 44, app.css.scss */
+h1 {
+  font-size: 118px;
+  letter-spacing: 10px;
+  text-shadow: -2px 2px 0 #f1f2f2, -4px 4px 0 #3a3a3c; }
+
+/* line 50, app.css.scss */
+h2 {
+  font-size: 44px;
+  line-height: 1;
+  letter-spacing: 1px;
+  margin: 79px 0 46px 0;
+  text-shadow: -1px 1px 0 #f1f2f2, -3px 3px 0 #b3b3b3; }
+
+/* line 58, app.css.scss */
+.white {
+  color: #F3F3F4;
+  text-shadow: -2px 2px 0 #282828, -3px 3px 0 rgba(255, 255, 255, 0.2);
+  margin: -18px 0 63px 0; }
+
+/* line 64, app.css.scss */
+h3 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: 1px;
+  line-height: 0;
+  text-align: center;
+  text-transform: uppercase; }
+
+/* line 74, app.css.scss */
+h4 {
+  font-size: 44px;
+  font-weight: 400;
+  text-transform: lowercase;
+  letter-spacing: 5px; }
+
+/* line 83, app.css.scss */
+h5 {
+  font-weight: 700;
+  font-size: 28px;
+  text-align: left;
+  margin: 0 0 10px 0; }
+  /* line 89, app.css.scss */
+  h5 span {
+    font-weight: 400;
+    color: #666666; }
+
+/* line 95, app.css.scss */
+strong {
+  font-weight: 700;
+  color: #282828;
+  text-shadow: none; }
+
+/* line 101, app.css.scss */
+p {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #282828;
+  line-height: 18px;
+  margin: 0;
+  display: inline-block; }
+
+/* ------------------------------------------------------ */
+/* ------------------ END TYPOGRAPHY -------------------- */
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+/* ------------------ MAIN CONTAINERS ------------------- */
+/* ------------------------------------------------------ */
+/* line 121, app.css.scss */
+.wrapper {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+/* line 127, app.css.scss */
+.main {
+  max-width: 990px;
+  width: 95%;
+  margin: 0 auto;
+  padding: 0; }
+
+/* line 134, app.css.scss */
+header {
+  width: 100%;
+  padding: 20% 0 10% 0;
+  -webkit-animation-name: header;
+  -webkit-animation-duration: .5s; }
+  /* line 140, app.css.scss */
+  header img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto; }
+
+@-webkit-keyframes header {
+  /* line 148, app.css.scss */
+  from {
+    -webkit-transform: scale(0);
+    opacity: 0; }
+
+  /* line 152, app.css.scss */
+  50% {
+    -webkit-transform: scale(0);
+    opacity: .25; }
+
+  /* line 156, app.css.scss */
+  82.5% {
+    -webkit-transform: scale(1.13);
+    -webkit-animation-timing-function: ease-out;
+    opacity: 1; }
+
+  /* line 161, app.css.scss */
+  to {
+    -webkit-transform: scale(1); } }
+
+/* line 166, app.css.scss */
+.cbs-hero {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  width: 100%; }
+  /* line 172, app.css.scss */
+  .cbs-hero img {
+    width: 60%;
+    height: auto;
+    margin: 0 auto; }
+
+/* line 179, app.css.scss */
+a, .byline {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #afafaf;
+  text-decoration: none; }
+  /* line 186, app.css.scss */
+  a:hover, .byline:hover {
+    color: #282828; }
+
+/* line 191, app.css.scss */
+.byline {
+  color: #282828; }
+
+/* line 195, app.css.scss */
+.left-quote, .right-quote {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 45px; }
+  /* line 200, app.css.scss */
+  .left-quote img, .right-quote img {
+    max-width: 156px;
+    width: 20%;
+    height: auto;
+    display: inline-block; }
+  /* line 207, app.css.scss */
+  .left-quote p, .right-quote p {
+    width: 42%;
+    font-size: 16px;
+    line-height: 1.4; }
+
+/* line 215, app.css.scss */
+.left-quote {
+  text-align: left; }
+  /* line 218, app.css.scss */
+  .left-quote img {
+    margin-right: 25px; }
+    /* line 221, app.css.scss */
+    .left-quote img.lauren {
+      margin-bottom: -35px; }
+    /* line 225, app.css.scss */
+    .left-quote img.kris {
+      margin-bottom: -39px; }
+
+/* line 231, app.css.scss */
+.right-quote {
+  text-align: right; }
+  /* line 234, app.css.scss */
+  .right-quote img {
+    margin-left: 25px;
+    float: right; }
+    /* line 238, app.css.scss */
+    .right-quote img.lee {
+      margin-bottom: -53px; }
+    /* line 242, app.css.scss */
+    .right-quote img.relevant {
+      margin-bottom: -49px; }
+  /* line 247, app.css.scss */
+  .right-quote p.lee, .right-quote p.relevant {
+    margin-top: 48px; }
+
+/* line 252, app.css.scss */
+.no-bleed {
+  width: 100%;
+  margin-top: 50px;
+  padding: 63px 0 49px 0;
+  background-color: #282828; }
+
+/* line 259, app.css.scss */
+.booking-section {
+  width: 100%; }
+
+/* ------------------------------------------------------ */
+/* -------------- END MAIN CONTAINERS ------------------- */
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+/* ------------------- BIO SECTION ---------------------- */
+/* ------------------------------------------------------ */
+/* line 272, app.css.scss */
+.bio {
+  width: 100%;
+  margin: 0 auto; }
+
+/* line 277, app.css.scss */
+.bio img {
+  float: left;
+  margin-right: 25px;
+  max-width: 411px;
+  width: 32%;
+  border: 4px solid white; }
+
+/* line 285, app.css.scss */
+.bio p {
+  max-width: 630px;
+  width: 63%; }
+
+/* ------------------------------------------------------ */
+/* --------------- END BIO SECTION ---------------------- */
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+/* ------------------ BOOKING BUTTON -------------------- */
+/* ------------------------------------------------------ */
+/* line 298, app.css.scss */
+.booking-button {
+  width: 75%;
+  margin: 75px auto;
+  text-align: center;
+  padding: 30px 0;
+  background: #edf0f2;
+  border: 4px solid white;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 1px;
+  -webkit-transition: .1s all ease; }
+
+/* line 310, app.css.scss */
+.booking-button:hover {
+  background-color: white; }
+  /* line 313, app.css.scss */
+  .booking-button:hover a {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    font-weight: 700;
+    color: #2a3d5d;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    text-transform: uppercase; }
+
+/* ------------------------------------------------------ */
+/* ----------------- END BOOKING BUTTON ----------------- */
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+/* ------------------ BOOKING SECTION ------------------- */
+/* ------------------------------------------------------ */
+/* line 333, app.css.scss */
+.or {
+  width: 100%;
+  padding: 10px 0;
+  border-top: 1px dotted rgba(255, 255, 255, 0.2);
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+  text-align: center;
+  margin: -41px 0 44px 0;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.2);
+  font-family: serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 28px; }
+
+/* line 350, app.css.scss */
+.email {
+  width: 100%;
+  text-align: center;
+  margin: 0; }
+  /* line 355, app.css.scss */
+  .email h4 {
+    margin: -9px 0px 26px 0px; }
+
+/* line 360, app.css.scss */
+.email:hover {
+  opacity: .95; }
+  /* line 364, app.css.scss */
+  .email:hover h4 {
+    text-shadow: none; }
+
+/* line 369, app.css.scss */
+.ss-send, .ss-mail, .ss-phone {
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 0; }
+
+/* line 377, app.css.scss */
+.ss-phone {
+  margin: -55px 0 61px 0; }
+
+/* ------------------------------------------------------ */
+/* --------------- END BOOKING SECTION ------------------ */
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+/* ------ SPEAKING, DISCOGRAPHY & BOOKS SECTION --------- */
+/* ------------------------------------------------------ */
+/* line 389, app.css.scss */
+.short-text {
+  font-size: 16px;
+  line-height: 1.4; }
+
+/* line 394, app.css.scss */
+.speaking-vid {
+  position: relative;
+  padding: 25px 0 56.25% 0;
+  height: 0;
+  margin: 0 auto;
+  margin-top: 15px;
+  background-color: none; }
+
+/* line 403, app.css.scss */
+.speaking-vid iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+/* line 411, app.css.scss */
+ul {
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+  margin: 20px 5% 20px 0;
+  text-align: left; }
+  /* line 420, app.css.scss */
+  ul.speaking-topics {
+    width: 30%;
+    padding: 2.8%;
+    padding-left: 0;
+    margin: 0; }
+  /* line 429, app.css.scss */
+  ul li.cds {
+    height: 115px; }
+  /* line 433, app.css.scss */
+  ul li.speaking-topics {
+    color: #282828;
+    padding: 0 0 10px 0;
+    font-weight: bolder; }
+
+/* line 441, app.css.scss */
+.year {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 10px;
+  color: #AAA;
+  display: inline; }
+
+/* line 452, app.css.scss */
+li {
+  list-style: none;
+  padding-bottom: 70px;
+  color: #e6e6e6;
+  display: block; }
+  /* line 458, app.css.scss */
+  li.oj-book {
+    padding-bottom: 116px; }
+  /* line 462, app.css.scss */
+  li img {
+    float: left;
+    width: 130px;
+    margin: 0 2% 0 0;
+    padding: 0; }
+  /* line 469, app.css.scss */
+  li p {
+    width: 65%; }
+
+/* ------------------------------------------------------ */
+/* ---------- END DISCOGRAPHY & BOOKS SECTION ----------- */
+/* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
+/* -------------------- AVAILABLE AT -------------------- */
+/* ------------------------------------------------------ */
+/* line 482, app.css.scss */
+.stores {
+  width: 100%; }
+  /* line 485, app.css.scss */
+  .stores img {
+    width: 19%;
+    max-width: 195px;
+    height: auto;
+    margin: 0px 2px 20px 0;
+    display: inline-block;
+    text-align: center;
+    border-right: 1px solid white; }
+    /* line 494, app.css.scss */
+    .stores img.omega {
+      border-right: none;
+      margin-right: 0; }
+  /* line 500, app.css.scss */
+  .stores a {
+    background-color: none; }
+  /* line 504, app.css.scss */
+  .stores a:hover {
+    background-color: rgba(0, 0, 0, 0.15); }
+
+/* ------------------------------------------------------ */
+/* ------------------ END AVAILABLE AT ------------------ */
+/* ------------------------------------------------------ */
+/* line 515, app.css.scss */
+hr {
+  width: 100%;
+  margin: 50px auto;
+  height: 3px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-left: none;
+  border-right: none;
+  background-color: none; }
+  /* line 525, app.css.scss */
+  hr.behind-text {
+    margin: -20px 0 0 0; }
+
+/* ------------------------------------------------------ */
+/* -------------------- MEDIA QUERIES ------------------- */
+/* ------------------------------------------------------ */
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 850px) {
+  /* line 537, app.css.scss */
+  ul {
+    width: 90%;
+    display: block;
+    margin: 20px 5%; }
+    /* line 544, app.css.scss */
+    ul.books li {
+      height: auto;
+      padding-bottom: 115px; }
+      /* line 548, app.css.scss */
+      ul.books li.oj-book {
+        padding-bottom: 115px; }
+      /* line 552, app.css.scss */
+      ul.books li.hthbook {
+        border-bottom: none; }
+
+  /* line 559, app.css.scss */
+  li {
+    border-bottom: 1px white solid;
+    margin-bottom: 5%; }
+    /* line 563, app.css.scss */
+    li.tycswyh {
+      border-bottom: 1px white solid;
+      padding-bottom: 12%; }
+    /* line 568, app.css.scss */
+    li.hthcd {
+      border-bottom: none; } }
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  /* line 585, app.css.scss */
+  h1 {
+    font-size: 40px; }
+
+  /* line 589, app.css.scss */
+  h2 {
+    font-size: 35px;
+    margin: 5% auto; }
+
+  /* line 594, app.css.scss */
+  .ss-send, .ss-phone {
+    display: none; }
+
+  /* ------------------------------------------------------ */
+  /* ------------------- BIO SECTION ---------------------- */
+  /* ------------------------------------------------------ */
+  /* line 602, app.css.scss */
+  .bio img {
+    float: none;
+    width: 90%;
+    margin: 0 auto;
+    display: block; }
+
+  /* line 609, app.css.scss */
+  .bio p {
+    width: 75%;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: justify;
+    margin: 25px 15%;
+    padding: 0; }
+
+  /* line 618, app.css.scss */
+  .left-quote, .right-quote {
+    width: 100%;
+    display: block;
+    margin-bottom: 5%; }
+    /* line 623, app.css.scss */
+    .left-quote img, .right-quote img {
+      max-width: 90px;
+      width: 100%;
+      margin: 0 auto;
+      display: block; }
+    /* line 630, app.css.scss */
+    .left-quote p, .right-quote p {
+      width: 90%;
+      font-size: 14px;
+      padding-top: 3%; }
+
+  /* line 638, app.css.scss */
+  .left-quote {
+    text-align: center;
+    padding-bottom: 5%; }
+    /* line 642, app.css.scss */
+    .left-quote img {
+      margin: 0 auto;
+      margin-bottom: 5%; }
+      /* line 646, app.css.scss */
+      .left-quote img.lauren {
+        margin-bottom: 0; }
+      /* line 650, app.css.scss */
+      .left-quote img.kris {
+        margin-bottom: 0; }
+
+  /* line 656, app.css.scss */
+  .right-quote {
+    text-align: center;
+    padding-bottom: 5%; }
+    /* line 660, app.css.scss */
+    .right-quote img {
+      margin: 0 auto;
+      margin-bottom: 5%;
+      float: none; }
+      /* line 665, app.css.scss */
+      .right-quote img.lee {
+        margin-bottom: 0; }
+      /* line 669, app.css.scss */
+      .right-quote img.relevant {
+        margin-bottom: 0; }
+    /* line 674, app.css.scss */
+    .right-quote p.lee, .right-quote p.relevant {
+      margin-top: 0; }
+
+  /* ------------------------------------------------------ */
+  /* --------------- END BIO SECTION ---------------------- */
+  /* ------------------------------------------------------ */ }
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  /* line 691, app.css.scss */
+  header {
+    margin: 5% auto 5% auto; }
+
+  /* line 695, app.css.scss */
+  h1 {
+    font-size: 30px; }
+
+  /* line 699, app.css.scss */
+  h2 {
+    font-size: 26px;
+    margin: 5% 0 8% 0;
+    text-shadow: -1px 1px 0 #f1f2f2, -2px 2px 0 #b3b3b3; }
+
+  /* line 705, app.css.scss */
+  h4 {
+    font-size: 25px; }
+
+  /* line 709, app.css.scss */
+  .white {
+    text-shadow: -2px 2px 0 #282828, -2px 2px 0 rgba(255, 255, 255, 0.2);
+    margin: 2% auto; }
+
+  /* line 714, app.css.scss */
+  h5 {
+    font-size: 18px;
+    text-align: center; }
+
+  /* line 719, app.css.scss */
+  .or {
+    font-size: 14px;
+    margin: 0 auto; }
+
+  /* line 726, app.css.scss */
+  .email h4 {
+    margin: 2% auto 0 auto; }
+
+  /* line 732, app.css.scss */
+  .no-bleed {
+    padding: 5% 0;
+    margin: 5% auto 10% auto; }
+
+  /* line 737, app.css.scss */
+  .ss-send, .ss-phone {
+    display: none; }
+
+  /* line 743, app.css.scss */
+  .cbs-hero img {
+    width: 80%; }
+
+  /* line 748, app.css.scss */
+  .bio p {
+    text-align: left; }
+
+  /* line 752, app.css.scss */
+  ul {
+    text-align: center; }
+    /* line 755, app.css.scss */
+    ul li {
+      padding-bottom: 3%; }
+      /* line 758, app.css.scss */
+      ul li.cds {
+        height: auto; }
+      /* line 762, app.css.scss */
+      ul li img {
+        float: none;
+        margin: 0 auto;
+        display: block;
+        padding-bottom: 5%;
+        padding-top: 5%; }
+    /* line 772, app.css.scss */
+    ul.books li {
+      height: auto;
+      padding-bottom: 8%; }
+      /* line 776, app.css.scss */
+      ul.books li.oj-book {
+        padding-bottom: 8%; }
+
+  /* line 783, app.css.scss */
+  .year {
+    display: block;
+    margin-top: 5px;
+    text-align: center; }
+
+  /* line 789, app.css.scss */
+  .stores {
+    text-align: center; }
+    /* line 792, app.css.scss */
+    .stores img {
+      width: 75%;
+      margin: 0 auto;
+      border-right: none;
+      border-bottom: 1px solid white; }
+    /* line 799, app.css.scss */
+    .stores a:hover {
+      background-color: none; } }
