@@ -170,7 +170,7 @@ header {
   width: 100%;
 
   img {
-    width: 60%;
+    width: 70%;
     height: auto;
     margin: 0 auto;
   }
@@ -387,14 +387,28 @@ a, .byline {
 /* ------ SPEAKING, DISCOGRAPHY & BOOKS SECTION --------- */
 /* ------------------------------------------------------ */
 
-.short-text {
+
+.short-text p {
   font-size: 16px;
   line-height: 1.4;
 }
 
+.short-text a, .short-text a:visited {
+  font: {
+      family: 'Libre Baskerville', serif;
+      weight: 400;
+      size: 16px;
+  }
+  color: #B31313;
+}
+
+.short-text a:hover, .short-text a:focus {
+  color: rgb(40,40,40);
+}
+
 .speaking-vid {
   position: relative;
-  padding: 25px 0 56.25% 0;
+  padding: 0;
   height: 0;
   margin: 0 auto;
   margin-top: 15px;
@@ -405,8 +419,8 @@ a, .byline {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 48%;
+  height: 48%;
 }
 
 ul {
