@@ -388,22 +388,25 @@ a, .byline {
 /* ------------------------------------------------------ */
 
 
-.short-text p {
+.short-text {
+
+  p {
   font-size: 16px;
   line-height: 1.4;
-}
-
-.short-text a, .short-text a:visited {
-  font: {
-      family: 'Libre Baskerville', serif;
-      weight: 400;
-      size: 16px;
   }
-  color: #B31313;
-}
 
-.short-text a:hover, .short-text a:focus {
-  color: rgb(40,40,40);
+  a, .short-text a:visited {
+    font: {
+        family: 'Libre Baskerville', serif;
+        weight: 400;
+        size: 16px;
+    }
+    color: #B31313;
+  }
+
+  a:hover, .short-text a:focus {
+    color: rgb(40,40,40);
+  }
 }
 
 .speaking-vid {
